@@ -1,0 +1,93 @@
+/* base page background */
+body {
+  background: #b8c8f0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Card container styling */
+.signup-card {
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* LEFT PANEL */
+.left-panel {
+  background: #475de0; /* blue shade */
+  color: #fff;
+  text-align: center;
+}
+.brand-title {
+  font-weight: 700;
+  font-size: 36px;
+  margin-top: 8px;
+}
+.lead-sub {
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 12px;
+}
+.left-panel .illustration {
+  width: 90%;
+  border-radius: 12px;
+  background: #fff; /* if your illustration has transparency */
+}
+
+/* RIGHT PANEL */
+.right-panel {
+  background: #ffffff;
+}
+
+/* Form controls: remove default border, add underline style */
+.input-underline {
+  border: none;
+  border-bottom: 2px solid #6b7be8;
+  border-radius: 0;
+  box-shadow: none !important;
+  padding-left: 0.25rem;
+  padding-right: 2.75rem; /* leave space for eye icon */
+}
+
+/* when focused */
+.input-underline:focus {
+  outline: none;
+  box-shadow: none;
+  border-bottom-color: #3048b2;
+}
+
+/* position eye icon within the input wrapper */
+.password-icon {
+  right: 10px;
+  top: 10px;
+  color: #4b64d1;
+  cursor: default; /* decorative */
+  font-size: 1.05rem;
+}
+
+/* Button styles */
+.signup-btn {
+  background: #4b64d1;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 0;
+  border: none;
+  font-weight: 600;
+}
+
+.google-btn {
+  border: 1px solid #4b64d1;
+  color: #4b64d1;
+  background: transparent;
+  border-radius: 6px;
+  padding: 6px 12px;
+}
+
+/* small screens: make columns stack */
+@media (max-width: 767.98px) {
+  .left-panel {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .right-panel {
+    padding: 30px 20px;
+  }
+}
